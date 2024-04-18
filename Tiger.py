@@ -11,7 +11,7 @@ class Tiger(Animal):
     # Create a list of tiger names.
     list_of_tiger_names = []
 
-    file_path = r"/module-07-zoo-keeper-s-challenge-JohnnyRod559/animalNames.txt"
+    file_path = r"C:\\Users\\Johnny\\OneDrive\\Desktop\\ZOOpythonProgram\\animalNames.txt"
     with open(file_path, 'r') as file:
         lines = file.readlines()
 
