@@ -11,6 +11,8 @@ from Hyena import Hyena
 from Lion import Lion
 from Bear import Bear
 from Tiger import Tiger
+from file_write import write_zoo_population
+
 
 from _datetime import date
 
@@ -162,3 +164,7 @@ for tiger in list_of_tigers:
     print(tiger.animal_id + ", " + tiger.name + "; birthdate: " + str(tiger.birth_date) + "; " + tiger.color +
           "; " + tiger.sex + "; " + tiger.weight + "; " + tiger.originating_zoo + "; arrived: " +
           str(tiger.date_arrival))
+
+# Call the function from file_writer to write the zoo population data to a file
+output_file_path = r"C:\\Users\\Johnny\\OneDrive\\Desktop\\ZOOpythonProgram\\module-07-zoo-keeper-s-challenge-johnnyrod559\\zoo_population.txt"
+write_zoo_population(output_file_path, list_of_hyenas, list_of_lions, list_of_bears, list_of_tigers)
